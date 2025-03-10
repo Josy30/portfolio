@@ -2,12 +2,16 @@
 
 
 
-.PortadaPage_inicial{
+.Portada_saludo{
+    display: flex;
+    justify-content: center;
 
     h1{
     color: white;
     font-family: "Bellefair";
+    font-size: 5rem;
     padding: 3rem;
+    
     }
     
 
