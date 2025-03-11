@@ -9,8 +9,12 @@ function Portada(){
         <div className='Portada_saludo'>
             <h1>Hi there ! I'm Josy</h1>
         </div>
-
-
+        <div>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+        </div>
 
 
         
