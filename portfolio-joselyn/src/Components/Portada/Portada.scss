@@ -5,6 +5,7 @@
 .Portada_saludo{
     display: flex;
     justify-content: center;
+    height: 15rem;
 
     h1{
     color: white;
@@ -14,5 +15,62 @@
     
     }
     
+}
+
+.Portada_icons{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    
+
+    &_linkedin{
+        position: relative; 
+        display: block;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        line-height: 63px;
+        background: transparent;
+        border-radius: 10%;
+        font-size: 30px;
+        color: transparent;
+        transition: .5s;
+        
+        
+
+        img{
+            width: 3rem;
+            top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        }
+        
+    }
+
+    &_linkedin::before {
+        
+        transition: .5s;
+        transform: scale(.9);
+        z-index: -1;
+    }
+
+    &_linkedin:hover::before {
+        transform: scale(1.1);
+        box-shadow: 0 0 25px white;
+    }
+
+    &_linkedin:hover {
+        color: white;
+        box-shadow: 0 0 30px white;
+        text-shadow: 0 0 30px white;
+    }
+
+    &_github{
+        transition: .5s;
+        img{
+            width: 3rem;
+        }
+    }
 
 }
