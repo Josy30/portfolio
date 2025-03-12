@@ -3,6 +3,7 @@ import './App.scss';
 import backgroundVideo from "./src/assets/fondo5.mp4";
 import { Portada } from './src/Components/Portada/Portada';
 import { Header } from './src/Components/Header/Header';
+import { About } from './src/Components/About/About';
 
 
 
@@ -18,7 +19,7 @@ function App() {
         </video>
       <Header/>
       <Portada/>
-      
+      <About/>
     </div>
   )
 }

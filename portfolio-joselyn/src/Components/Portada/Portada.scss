@@ -1,17 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bayon&family=Beiruti:wght@200..900&family=Bellefair&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://db.onlinewebfonts.com/c/2aea0ac500c896188f9ad191c231029c?family=Orpheus+Pro');
 
 
 .Portada_saludo{
     display: flex;
     justify-content: center;
-    height: 15rem;
+    height: 20rem;
+    
 
     h1{
     color: white;
-    font-family: "Bellefair";
-    font-size: 5rem;
-    padding: 3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+        .saludo{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1.5rem;
+        padding: 3rem;
+        
+        }
+        
+        .nombre{
+        font-size: 5rem;
+        font-weight: unset;
+        font-family: "Orpheus+Proy";
+        }
+    
     
     }
     
@@ -38,39 +52,117 @@
         
         
 
-        img{
-            width: 3rem;
+            img{
+        
             top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        }
+            left: 0;
+            width: 100%;
+            height: 100%;
+            width: 2rem;
+            height: 2rem;
+            }
         
     }
 
-    &_linkedin::before {
+        &_linkedin::before {
         
         transition: .5s;
         transform: scale(.9);
         z-index: -1;
-    }
+        }
 
-    &_linkedin:hover::before {
+        &_linkedin:hover::before {
         transform: scale(1.1);
         box-shadow: 0 0 25px white;
-    }
+        }
 
-    &_linkedin:hover {
+        &_linkedin:hover {
         color: white;
         box-shadow: 0 0 30px white;
         text-shadow: 0 0 30px white;
-    }
+        }
 
     &_github{
+        position: relative; 
+        display: block;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        line-height: 63px;
+        background: transparent;
+        border-radius: 10%;
+        font-size: 30px;
+        color: transparent;
+        transition: .5s;
+        
+            img{
+            
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            width: 3rem;
+            height: 3rem;
+            }
+    }
+
+        &_github::before {
+        
+        transition: .5s;
+        transform: scale(.9);
+        z-index: -1;
+        }
+
+        &_github:hover::before {
+        transform: scale(1.1);
+        box-shadow: 0 0 25px white;
+        }
+
+        &_github:hover {
+        color: white;
+        box-shadow: 0 0 30px white;
+        text-shadow: 0 0 30px white;
+        }
+
+    &_correo{
+        position: relative; 
+        display: block;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        line-height: 63px;
+        background: transparent;
+        border-radius: 10%;
+        font-size: 30px;
+        color: transparent;
         transition: .5s;
         img{
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             width: 3rem;
+            height: 3rem;
         }
     }
+
+    &_correo::before {
+        
+        transition: .5s;
+        transform: scale(.9);
+        z-index: -1;
+        }
+
+        &_correo:hover::before {
+        transform: scale(1.1);
+        box-shadow: 0 0 25px white;
+        }
+
+        &_correo:hover {
+        color: white;
+        box-shadow: 0 0 30px white;
+        text-shadow: 0 0 30px white;
+        }
+
 
 }
