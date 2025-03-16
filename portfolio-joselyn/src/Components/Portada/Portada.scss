@@ -1,5 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bayon&family=Beiruti:wght@200..900&family=Bellefair&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://db.onlinewebfonts.com/c/2aea0ac500c896188f9ad191c231029c?family=Orpheus+Pro');
+@import url('https://fonts.cdnfonts.com/css/audrey');
+@import url('https://fonts.cdnfonts.com/css/tangerine');
+@import url('https://fonts.cdnfonts.com/css/italianno');
+
+.Portada {
+    position: relative;
+    top:6rem;
 
 
 .Portada_saludo{
@@ -21,9 +26,9 @@
         }
         
         .nombre{
-        font-size: 5rem;
-        font-weight: unset;
-        font-family: "Orpheus+Proy";
+        font-size: 7rem;
+        font-family: "italianno";
+        font-weight: 500;
         }
     
     
@@ -164,5 +169,16 @@
         text-shadow: 0 0 30px white;
         }
 
-
+}
+}
+.Portada_deslizar{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 22rem;
+    img{
+        filter: invert(1);
+        width: 2rem;
+        cursor: pointer;
+    }
 }

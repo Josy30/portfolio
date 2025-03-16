@@ -1,18 +1,19 @@
 import './Portada.scss';
 import GithubPhoto from "../../assets/icon-github.png";
 import LinkedInPhoto from "../../assets/icon-linkedin.png";
-import CorreoPhoto from "../../assets/icon-correo.png"
-
+import CorreoPhoto from "../../assets/icon-correo.png";
+import arrow from "../../assets/arrow1.gif"
 
 function Portada(){
 
     return(
 
         <>
+        <div className='Portada'>
         <div className='Portada_saludo'>
             <h1>
                 <span className='saludo'>HI THERE! I'M</span> 
-                <span className='nombre'>JOSELYN JUDITH</span>
+                <span className='nombre'>Joselyn   Judith</span>
             </h1>
         </div>
         <div className='Portada_icons'>
@@ -25,7 +26,13 @@ function Portada(){
             <a className='Portada_icons_correo' target="_blank" href="https://github.com/Josy30/">
                 <img src={CorreoPhoto}/>
             </a>
-            
+        </div>
+        </div>
+        <div className='Portada_deslizar'>
+            <a href="#about">
+            <img loop autoPlay muted src={arrow} type="video/mp4">
+            </img>
+            </a>
         </div>
         </>
 

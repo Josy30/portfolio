@@ -1,6 +1,7 @@
 import './Header.scss';
 import { useNavigate } from 'react-router';
-import { useLocation } from 'react-router'
+import { useLocation } from 'react-router';
+import { HashLink } from 'react-router-hash-link';
 
 function Header(){
 
@@ -14,39 +15,34 @@ function Header(){
     <div className='Header-component'>
         <div className='Header-component__titles'>
             <div>
-                <button 
+                <HashLink smooth to="#Portada"
                 className={location.pathname === '/' ? 'Button-header-chosen' : 'Button-header'}
-                onClick={() =>handleClick('/')}
                 >HOME
-                </button>
+                </HashLink>
             </div>
             <div>
-                <button 
+                <HashLink smooth to="#about"
                 className={location.pathname === '/about' ? 'Button-header-chosen' : 'Button-header'}
-                onClick={() =>handleClick('/about')}
                 >ABOUT
-                </button>
+                </HashLink>
             </div>
             <div>
-                <button 
+                <HashLink smooth to='#projects'
                 className={location.pathname === '/projects' ? 'Button-header-chosen' : 'Button-header'}
-                onClick={() =>handleClick('/projects')}
                 >PROJECTS
-                </button>
+                </HashLink>
             </div>
             <div>
-                <button 
+                <HashLink smooth to='#skills'
                 className={location.pathname === '/skills' ? 'Button-header-chosen' : 'Button-header'}
-                onClick={() =>handleClick('/skills')}
                 >SKILLS
-                </button>
+                </HashLink>
             </div>
             <div>
-                <button 
+                <HashLink smooth to='#contact_me'
                 className={location.pathname === '/contact me' ? 'Button-header-chosen' : 'Button-header'}
-                onClick={() =>handleClick('/contact me')}
                 >CONTACT ME
-                </button>
+                </HashLink>
             </div>
 
 
