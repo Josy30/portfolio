@@ -1,9 +1,6 @@
 
 
 .About_component{
-
-    display: flex;
-    flex-direction: column;
     color:white;
     justify-items: center;
     position: relative;
@@ -13,4 +10,19 @@
         justify-content: center;
         display: flex;
         }
+
+    .About_component_texto{
+    display: flex;
+    flex-direction: column;
+        
+        h2{
+        display: flex;
+        justify-content: flex-end;
+        }
+
+        span{
+        display: flex;
+        justify-content: flex-end;
+        }
+    }
 }

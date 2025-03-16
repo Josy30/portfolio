@@ -10,15 +10,19 @@ function Header(){
     const handleClick = (route) => {
         navigate(route)
         }
+    
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    };
 
     return (
     <div className='Header-component'>
         <div className='Header-component__titles'>
             <div>
-                <HashLink smooth to="#Portada"
+                <button onClick={scrollToTop}
                 className={location.pathname === '/' ? 'Button-header-chosen' : 'Button-header'}
                 >HOME
-                </HashLink>
+                </button>
             </div>
             <div>
                 <HashLink smooth to="#about"

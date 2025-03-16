@@ -9,7 +9,7 @@ function Portada(){
     return(
 
         <>
-        <div className='Portada'>
+        <div className='Portada' id='home'>
         <div className='Portada_saludo'>
             <h1>
                 <span className='saludo'>HI THERE! I'M</span> 

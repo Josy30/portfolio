@@ -6,6 +6,7 @@ import { About } from './src/Components/About/About';
 import { Projects } from './src/Components/Projects/Projects';
 import { Skills } from './src/Components/Skills/Skills';
 import { Contact_me } from './src/Components/Contact_me/Contact_me';
+import { useRef } from 'react';
 
 function App() {
 
