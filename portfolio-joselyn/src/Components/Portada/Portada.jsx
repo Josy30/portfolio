@@ -3,6 +3,7 @@ import GithubPhoto from "../../assets/icon-github.png";
 import LinkedInPhoto from "../../assets/icon-linkedin.png";
 import CorreoPhoto from "../../assets/icon-correo.png";
 import arrow from "../../assets/arrow1.gif"
+import { HashLink } from 'react-router-hash-link';
 
 function Portada(){
 
@@ -29,10 +30,10 @@ function Portada(){
         </div>
         </div>
         <div className='Portada_deslizar'>
-            <a href="#about">
+            <HashLink smooth to="#about">
             <img loop autoPlay muted src={arrow} type="video/mp4">
             </img>
-            </a>
+            </HashLink>
         </div>
         </>
 

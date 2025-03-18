@@ -4,7 +4,7 @@ function Projects() {
 
     return(
     <>
-    <div className='Proyects_component'>
+    <div id='projects' className='Proyects_component'>
         <h1>
             P R O J E C T S
         </h1>

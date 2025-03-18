@@ -2,6 +2,7 @@ import './Header.scss';
 import { useNavigate } from 'react-router';
 import { useLocation } from 'react-router';
 import { HashLink } from 'react-router-hash-link';
+import Music from '../../assets/audio.mp3';
 
 function Header(){
 
@@ -15,6 +16,17 @@ function Header(){
         window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     };
 
+        function playAudio() {
+        const audio = document.getElementById("myAudio");
+        audio.play();
+        console.log("hola")
+        }
+    
+        function pauseAudio() {
+        const audio = document.getElementById("myAudio");
+        audio.pause();
+        }
+
     return (
     <div className='Header-component'>
         <div className='Header-component__titles'>
@@ -25,10 +37,12 @@ function Header(){
                 </button>
             </div>
             <div>
-                <HashLink smooth to="#about"
+                
+                <HashLink smooth to="#about" 
                 className={location.pathname === '/about' ? 'Button-header-chosen' : 'Button-header'}
                 >ABOUT
                 </HashLink>
+                
             </div>
             <div>
                 <HashLink smooth to='#projects'
@@ -48,10 +62,15 @@ function Header(){
                 >CONTACT ME
                 </HashLink>
             </div>
-
-
         </div>
-
+        <audio id="myAudio" autoPlay>
+            <source src={ Music } type="audio/mpeg"/>
+            <source src={ Music } type="audio/mpeg"/>
+        </audio>
+        <div>
+            <button onClick={playAudio}>Play Audio</button>
+            <button onClick={pauseAudio}>Pause Audio</button>
+        </div>
     </div>
     
     )
