@@ -6,7 +6,7 @@ function Projects() {
     <>
     <div id='projects' className='Proyects_component'>
         <h1>
-            P R O J E C T S
+            PROJECTS
         </h1>
 
     </div>

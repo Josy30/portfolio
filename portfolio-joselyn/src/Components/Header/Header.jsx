@@ -67,7 +67,7 @@ function Header(){
             <source src={ Music } type="audio/mpeg"/>
             <source src={ Music } type="audio/mpeg"/>
         </audio>
-        <div>
+        <div className='Botones_musica'>
             <button onClick={playAudio}>Play Audio</button>
             <button onClick={pauseAudio}>Pause Audio</button>
         </div>
