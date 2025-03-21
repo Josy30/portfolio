@@ -24,6 +24,8 @@
 
         div{
         height: 100%;
+        display: flex;
+        align-items: center;
         }
         
 
@@ -32,7 +34,7 @@
             background-color: transparent;
             border:none;
             outline: none;
-            height: 100%;
+            height: min-content;
             padding: 0;
             border-radius: 0;
 

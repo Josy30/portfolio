@@ -14,7 +14,7 @@ function Portada(){
         <div className='Portada_saludo'>
             <h1>
                 <span className='saludo'>HI THERE! I'M</span> 
-                <span className='nombre'>Joselyn   Judith</span>
+                <span className='nombre'>Joselyn  Judith</span>
             </h1>
         </div>
         <div className='Portada_icons'>
@@ -24,7 +24,7 @@ function Portada(){
             <a className='Portada_icons_github' target="_blank" href="https://github.com/Josy30/">
                 <img src={GithubPhoto}/>
             </a>
-            <a className='Portada_icons_correo' target="_blank" href="https://github.com/Josy30/">
+            <a className='Portada_icons_correo' target="_blank" href="mailto:j.devetrieva@gmail.com">
                 <img src={CorreoPhoto}/>
             </a>
         </div>
