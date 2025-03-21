@@ -45,15 +45,21 @@ function Header(){
                 
             </div>
             <div>
-                <HashLink smooth to='#projects'
-                className={location.pathname === '/projects' ? 'Button-header-chosen' : 'Button-header'}
-                >PROJECTS
+                <HashLink smooth to='#certifications'
+                className={location.pathname === '/certifications' ? 'Button-header-chosen' : 'Button-header'}
+                >CERTIFICATIONS
                 </HashLink>
             </div>
             <div>
                 <HashLink smooth to='#skills'
                 className={location.pathname === '/skills' ? 'Button-header-chosen' : 'Button-header'}
                 >SKILLS
+                </HashLink>
+            </div>
+            <div>
+                <HashLink smooth to='#projects'
+                className={location.pathname === '/projects' ? 'Button-header-chosen' : 'Button-header'}
+                >PROJECTS
                 </HashLink>
             </div>
             <div>
