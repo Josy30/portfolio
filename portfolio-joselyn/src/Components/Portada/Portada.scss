@@ -4,7 +4,7 @@
 
 .Portada {
     position: relative;
-    top:60rem;
+    top:80rem;
 
 
 .Portada_saludo{
@@ -18,11 +18,111 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-        .saludo{
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 1.5rem;
-        padding: 3rem;
+    }
         
+        }
+        
+        
+        .saludo:after{
+            
+            position: absolute;
+            left: 16px;
+            text-shadow: -1px 0 red;
+            top: 0;
+            color: white;
+            background: black;
+            overflow: hidden;
+            clip-path: rect(0 900px 0 0);
+            animation: hola 2s infinite linear alternate-reverse;
+
+        }
+        .saludo:before {
+                
+                position: absolute;     
+                left: 8px;           
+                text-shadow: 1px 0 blue;          
+                top: 0;          
+                color: white;          
+                background: black;          
+                overflow: hidden;          
+                clip-path: rect(0 900px 0 0);           
+                animation: hola2 3s infinite linear alternate-reverse;
+            
+            }
+            
+
+
+        
+        @keyframes hola2 {
+            0% {
+            clip-path: rect(21px 9999px 49px 0);
+            }
+            5% {
+            clip-path: rect(27px 9999px 52px 0);
+            }
+            10% {
+            clip-path: rect(21px 9999px 70px 0);
+            }
+            15% {
+            clip-path: rect(65px, 9999px, 25px, 0);
+            }
+            20% {
+            clip-path: rect(24px, 9999px, 10px, 0);
+            }
+            25% {
+            clip-path: rect(61px, 9999px, 64px, 0);
+            }
+            30% {
+            clip-path: rect(34px, 9999px, 47px, 0);
+            }
+            35% {
+            clip-path: rect(46px, 9999px, 93px, 0);
+            }
+            40% {
+            clip-path: rect(46px, 9999px, 9px, 0);
+            }
+            45% {
+            clip-path: rect(67px, 9999px, 36px, 0);
+            }
+            50% {
+            clip-path: rect(72px, 9999px, 20px, 0);
+            }
+            55% {
+            clip-path: rect(79px, 9999px, 26px, 0);
+            }
+            60% {
+            clip-path: rect(13px, 9999px, 87px, 0);
+            }
+            65% {
+            clip-path: rect(10px, 9999px, 25px, 0);
+            }
+            70% {
+            clip-path: rect(85px, 9999px, 11px, 0);
+            }
+            75% {
+            clip-path: rect(94px, 9999px, 35px, 0);
+            }
+            80% {
+            clip-path: rect(50px, 9999px, 86px, 0);
+            }
+            85% {
+            clip-path: rect(74px, 9999px, 67px, 0);
+            }
+            90% {
+            clip-path: rect(1px, 9999px, 40px, 0);
+                }
+            95% {
+            clip-path: rect(3px, 9999px, 48px, 0);
+                }
+            100% {
+            clip-path: rect(90px, 9999px, 23px, 0);
+            }
+            
+        }
+            
+
+
+
         }
         
         .nombre{
@@ -33,9 +133,9 @@
         }
     
     
-    }
     
-}
+    
+
 
 .Portada_icons{
     display: flex;
@@ -171,12 +271,12 @@
         }
 
 }
-}
+
 .Portada_deslizar{
     display: flex;
     justify-content: center;
     position: relative;
-    top: 50rem;
+    top: 80rem;
     img{
         filter: invert(1);
         width: 2rem;
