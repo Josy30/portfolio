@@ -4,146 +4,46 @@
 
 .Portada {
     position: relative;
-    top:80rem;
+    top:66rem;
 
 
-.Portada_saludo{
+    .Portada_saludo{
     display: flex;
     justify-content: center;
     height: 20rem;
     
 
-    h1{
-    color: white;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    }
-        
-        }
+        h1{
+        color: white;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         
         
-        .saludo:after{
-            
+            .saludo{
             position: absolute;
-            left: 16px;
-            text-shadow: -1px 0 red;
-            top: 0;
+            top: -4rem;
             color: white;
-            background: black;
-            overflow: hidden;
-            clip-path: rect(0 900px 0 0);
-            animation: hola 2s infinite linear alternate-reverse;
+            background: none;
+            font-size: 2.5rem;
+            }
 
-        }
-        .saludo:before {
-                
-                position: absolute;     
-                left: 8px;           
-                text-shadow: 1px 0 blue;          
-                top: 0;          
-                color: white;          
-                background: black;          
-                overflow: hidden;          
-                clip-path: rect(0 900px 0 0);           
-                animation: hola2 3s infinite linear alternate-reverse;
+            .nombre{
+            font-size: 11rem;
+            font-family: "italianno";
+            font-weight: 500;
+            word-spacing: 3rem;
             
             }
-            
-
-
-        
-        @keyframes hola2 {
-            0% {
-            clip-path: rect(21px 9999px 49px 0);
-            }
-            5% {
-            clip-path: rect(27px 9999px 52px 0);
-            }
-            10% {
-            clip-path: rect(21px 9999px 70px 0);
-            }
-            15% {
-            clip-path: rect(65px, 9999px, 25px, 0);
-            }
-            20% {
-            clip-path: rect(24px, 9999px, 10px, 0);
-            }
-            25% {
-            clip-path: rect(61px, 9999px, 64px, 0);
-            }
-            30% {
-            clip-path: rect(34px, 9999px, 47px, 0);
-            }
-            35% {
-            clip-path: rect(46px, 9999px, 93px, 0);
-            }
-            40% {
-            clip-path: rect(46px, 9999px, 9px, 0);
-            }
-            45% {
-            clip-path: rect(67px, 9999px, 36px, 0);
-            }
-            50% {
-            clip-path: rect(72px, 9999px, 20px, 0);
-            }
-            55% {
-            clip-path: rect(79px, 9999px, 26px, 0);
-            }
-            60% {
-            clip-path: rect(13px, 9999px, 87px, 0);
-            }
-            65% {
-            clip-path: rect(10px, 9999px, 25px, 0);
-            }
-            70% {
-            clip-path: rect(85px, 9999px, 11px, 0);
-            }
-            75% {
-            clip-path: rect(94px, 9999px, 35px, 0);
-            }
-            80% {
-            clip-path: rect(50px, 9999px, 86px, 0);
-            }
-            85% {
-            clip-path: rect(74px, 9999px, 67px, 0);
-            }
-            90% {
-            clip-path: rect(1px, 9999px, 40px, 0);
-                }
-            95% {
-            clip-path: rect(3px, 9999px, 48px, 0);
-                }
-            100% {
-            clip-path: rect(90px, 9999px, 23px, 0);
-            }
-            
-        }
-            
-
-
-
-        }
-        
-        .nombre{
-        font-size: 7rem;
-        font-family: "italianno";
-        font-weight: 500;
-        word-spacing: 2rem;
-        }
-    
-    
-    
-    
-
-
-.Portada_icons{
+        }    
+}        
+    .Portada_icons{
     display: flex;
-    gap: 2rem;
+    gap: 5rem;
     justify-content: center;
     align-items: center;
 
-    &_linkedin{
+        &_linkedin{
         position: relative; 
         display: block;
         width: 2rem;
@@ -161,14 +61,13 @@
             left: 0;
             width: 100%;
             height: 100%;
-            width: 2rem;
-            height: 2rem;
+            width: 4rem;
+            height: 4rem;
             }
         
-    }
+        }
 
         &_linkedin::before {
-        
         transition: .5s;
         transform: scale(.9);
         z-index: -1;
@@ -185,7 +84,7 @@
         text-shadow: 0 0 30px white;
         }
 
-    &_github{
+        &_github{
         position: relative; 
         display: block;
         width: 2.8rem;
@@ -202,10 +101,10 @@
             left: -1.6px;
             width: 100%;
             height: 100%;
-            width: 3rem;
-            height: 3rem;
+            width: 5rem;
+            height: 5rem;
             }
-    }
+        }
 
         &_github::before {
         
@@ -225,7 +124,7 @@
         text-shadow: 0 0 30px white;
         }
 
-    &_correo{
+        &_correo{
         position: relative; 
         display: block;
         width: 2.6rem;
@@ -240,10 +139,10 @@
             left: 0;
             width: 100%;
             height: 100%;
-            width: 2.6rem;
-    height: 2.1rem;
+            width: 4rem;
+            height: 4rem;
         }
-    }
+        }
 
     &_correo::before {
         
@@ -269,14 +168,14 @@
             box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
             /* Lowering the shadow */
         }
-
+    }
 }
 
 .Portada_deslizar{
     display: flex;
     justify-content: center;
     position: relative;
-    top: 80rem;
+    top: 95rem;
     img{
         filter: invert(1);
         width: 2rem;
