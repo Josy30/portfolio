@@ -11,10 +11,14 @@
     padding: 5rem;
     height: 100%;
     z-index: -1;
-    padding-top: 11rem;
+    padding-top: 15rem;
 
     .About_container {
         display: flex;
+        margin:4rem;
+        gap: 10rem;
+        margin-top: 12rem;
+        padding: 0 5rem;
     }
 
     
@@ -24,11 +28,6 @@
     flex:1;
     flex-direction: column;
         
-        h2{
-        display: flex;
-        justify-content: center;
-        
-        }
 
         span{
         display: flex;
@@ -39,5 +38,8 @@
 
     .About_component_img{
         flex:1;
+        background-image: url(../../assets/aboutImg.jpeg);
+        background-size: cover;
+        border-radius: 250% 100%;
     }
 }
