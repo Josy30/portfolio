@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router';
 import { useLocation } from 'react-router';
 import { HashLink } from 'react-router-hash-link';
 import Music from '../../assets/audio.mp3';
-import IconMusic from '../../assets/sound.gif';
+import IconMusic from '../../assets/sound4.gif';
 
 function Header(){
 
@@ -75,8 +75,8 @@ function Header(){
             <source src={ Music } type="audio/mpeg"/>
         </audio>
         <div className='Botones_musica'>
-            <button onClick={playAudio}>Play Audio
-                <img src='IconMusic'></img>
+            <button onClick={playAudio} >P
+                <img src={IconMusic}></img>
             </button>
             <button onClick={pauseAudio}>Pause Audio</button>
         </div>

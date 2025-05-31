@@ -1,4 +1,29 @@
+.About_background{
 
+    
+    img{
+        height: 30rem;
+        width: 20rem;
+    }
+}
+
+
+.About_titulo{
+        
+        h1{
+        justify-content: center;
+        display: flex;
+        letter-spacing: 1rem;
+        color:white;
+        position: relative;
+        top: 120rem;
+        padding: 5rem;
+        height: 100%;
+        z-index: -1;
+        padding-top: 11rem;
+        }
+        
+}
 
 .About_component{
     color:white;
@@ -9,20 +34,17 @@
     height: 100%;
     z-index: -1;
     padding-top: 11rem;
-    
-        h1{
-        justify-content: center;
-        display: flex;
-        letter-spacing: 1rem;
-        }
+    display: flex;
+        
 
     .About_component_texto{
-    display: flex;
+    flex:1;
     flex-direction: column;
         
         h2{
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
+        
         }
 
         span{
@@ -30,5 +52,9 @@
         justify-content: flex-end;
         font-size: 2.5rem;
         }
+    }
+
+    .About_component_img{
+        flex:1;
     }
 }
