@@ -25,27 +25,29 @@ function Contact_me() {
 
     return(
     <>
+    <div className='contact_me'>
     <div id='contact_me' className='Contact_me_component'>
         <h1>CONTACT ME </h1>
     </div>
     <div className='Contact_me_component_seccion'>
         <div className='Contact_me_component_seccion_texto'>
             <h2>Get in Touch</h2>
-            <p>I'd love to hear about what you're working on and how I could help. <br/>I'm currently looking for a new role and am open to a wide range of opportunities. <br/>I am open to new technologies and ways to code, whatever tool is needed for the job.<br/> I'm a hard-working and positive person who will always approach each task with a <br/>sense of purpose and attention to detail. Creativity, discipline, perseverance and hard<br/>work are my values. Please do feel free to check out my online profiles below and<br/> get in touch using the form.</p>
+            <p>I'd love to hear about what you're working on and how I could help.I'm currently looking for a new role and am open to a wide range of opportunities.I am open to new technologies and ways to code, whatever tool is needed for the job. I'm a hard-working and positive person who will always approach each task with a sense of purpose and attention to detail. Creativity, discipline, perseverance and hard work are my values. Please do feel free to check out my online profiles below and get in touch using the form.</p>
         </div>
         <div className='Contact_me_component_seccion_formulario'>
             <h2>Let's Talk! </h2>
             <form onSubmit={handleOnSubmit}>
                 <label for="name">Name :</label>
-                <input name="name"></input>
-                <label>Email Address</label>
-                <input></input>
-                <label for="message">Message</label>
-                <input name="message"></input>
-                <input type="submit" />
+                <input name="name" placeholder='  Halo! Here your Name!'></input>
+                <label>Email Address :</label>
+                <input name="email address" placeholder='  here your Email !'></input>
+                <label for="message">Message :</label>
+                <input name="message" placeholder='  leave me your message'></input>
+                <input className='enviar' type="submit" />
             </form>
 
         </div>
+    </div>
     </div>
     <footer>
         <div className='Portada_icons_footer'>
