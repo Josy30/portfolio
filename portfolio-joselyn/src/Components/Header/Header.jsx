@@ -81,6 +81,7 @@ function Header(){
             <button onClick={pauseAudio}>Pause Audio</button>
         </div>
     </div>
+   
     
     )
 
