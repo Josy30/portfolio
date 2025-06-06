@@ -43,7 +43,10 @@ function Contact_me() {
                 <input name="email address" placeholder='  here your Email !'></input>
                 <label for="message">Message :</label>
                 <input name="message" placeholder='  leave me your message'></input>
-                <input className='enviar' type="submit" />
+                <div className='enviar-container'>
+                    <input className='enviar' type="submit" />
+                </div>
+                
             </form>
 
         </div>
