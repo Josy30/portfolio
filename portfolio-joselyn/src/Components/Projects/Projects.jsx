@@ -11,41 +11,64 @@ function Projects() {
 
     return(
     <>
-    <div id='Projects_component' className='Proyects_component'>
-        <h1>PROJECTS</h1>
+        <div className='titulo_Projects'>
+            <h1>PROJECTS</h1>
+        </div>
+        
+        <section id='Projects_component' className='Projects_component'>
+            
 
             <div className="galeria">
-                <div class="item disenio">
-                    <img src="" alt="" />
+                <div class="item">
+                    <img src="" alt="Project Happy Paws" />
                     <div class="info">
                         <h3>Happy Paws</h3>
                         <span>html</span><span>css</span><span>javascript</span>
                         <a href="#">Ver Trabajo</a>
                     </div>
                 </div>
-                <div class="item programacion">
-                    <img src="src/assets/proyecto-peru.png" alt=""/>
+                <div class="item">
+                    <img src="src/assets/proyecto-peru.png" alt="Project Peru"/>
                     <div class="info">
                         <h3>Project Peru</h3>
                         <span>html</span><span>css</span><span>javascript</span>
                         <a href="#">Ver Trabajo</a>
                     </div>
                 </div>
-                <div class="item animaciones">
-                    <img src="" alt=""/>
+                <div class="item">
+                    <img src="" alt="Project 3"/>
                     <div class="info">
-                        <h3>Titulo del Trabajo</h3>
+                        <h3>Project 3</h3>
                         <span>html</span><span>css</span><span>javascript</span>
                         <a href="#">Ver Trabajo</a>
                     </div>
                 </div>
-
-
-
-
-
+                <div class="item">
+                    <img src="" alt="Project 4"/>
+                    <div class="info">
+                        <h3>Project 4</h3>
+                        <span>html</span><span>css</span><span>javascript</span>
+                        <a href="#">Ver Trabajo</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="" alt="Project 5"/>
+                    <div class="info">
+                        <h3>Project 5</h3>
+                        <span>html</span><span>css</span><span>javascript</span>
+                        <a href="#">Ver Trabajo</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="" alt="Project 6"/>
+                    <div class="info">
+                        <h3>Project 6</h3>
+                        <span>html</span><span>css</span><span>javascript</span>
+                        <a href="#">Ver Trabajo</a>
+                    </div>
+                </div>
             </div>
-    </div>
+        </section>
     </>
     )
 }
@@ -61,14 +84,7 @@ function verCategoria(cat){
         itemCat[i].style.display = "block";
     }
 
-    const links = document.querySelectorAll(".trabajos nav a");
-    links[0].className = "";
-    links[1].className = "";
-    links[2].className = "";
-    links[3].className = "";
-
-    const itemSeleccionado = document.getElementById(cat);
-    itemSeleccionado.className = "borde";
+    
 }
 
 
